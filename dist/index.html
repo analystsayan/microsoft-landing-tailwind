@@ -8,17 +8,22 @@
     <title>Microsoft - AI, Cloud, Productivity, Computing, Gaming & Apps</title>
 
     <link rel="shortcut icon" href="/assets/Microsoft_Logo_512px-CNfI1Jlu.png" type="image/x-icon" />
-  <script type="module" crossorigin src="/assets/index-BiPPX4vY.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CG4jeXpS.css">
+  <script type="module" crossorigin src="/assets/index-CebXX6pS.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DpF7rti9.css">
 </head>
 
 <body>
     <!-- navbar -->
     <nav class="h-12 p-3 md:px-8 lg:px-20 flex items-center justify-between bg-white">
         <div class="flex gap-5 md:hidden">
-            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                width="24px" fill="#000">
+            <svg id="openSidebar" class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#000">
                 <path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z" />
+            </svg>
+            <svg id="closeSidebar" class="hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#000">
+                <path
+                    d="M256-227.69 227.69-256l224-224-224-224L256-732.31l224 224 224-224L732.31-704l-224 224 224 224L704-227.69l-224-224-224 224Z" />
             </svg>
             <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
                 width="24px" fill="#000">
@@ -118,6 +123,69 @@
             </div>
         </div>
     </nav>
+    <aside id="sidebar" class="absolute top-12 bg-gray-100 w-full -left-full lg:hidden"
+        style="transition: left 0.3s; z-index: 999;">
+        <ul class="border-b-2 border-black">
+            <li class="p-3 border-t-2 border-gray-200 text-xs"><a href="#">Microsoft 365</a></li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs"><a href="#">Teams</a></li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs"><a href="#">Copilot</a></li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs"><a href="#">Windows</a></li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs"><a href="#">Surface</a></li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs"><a href="#">Xbox</a></li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs"><a href="#">Support</a></li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs">
+                <a class="flex items-center" href="#">Software
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
+                        width="18px" fill="#000">
+                        <path d="M480-371.69 267.69-584 296-612.31l184 184 184-184L692.31-584 480-371.69Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs">
+                <a class="flex items-center" href="#">PCs & Devices
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
+                        width="18px" fill="#000">
+                        <path d="M480-371.69 267.69-584 296-612.31l184 184 184-184L692.31-584 480-371.69Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs">
+                <a class="flex items-center" href="#">Entertainment
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
+                        width="18px" fill="#000">
+                        <path d="M480-371.69 267.69-584 296-612.31l184 184 184-184L692.31-584 480-371.69Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs">
+                <a class="flex items-center" href="#">Business
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
+                        width="18px" fill="#000">
+                        <path d="M480-371.69 267.69-584 296-612.31l184 184 184-184L692.31-584 480-371.69Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs">
+                <a class="flex items-center" href="#">Developer & IT
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
+                        width="18px" fill="#000">
+                        <path d="M480-371.69 267.69-584 296-612.31l184 184 184-184L692.31-584 480-371.69Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs">
+                <a class="flex items-center" href="#">Other
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
+                        width="18px" fill="#000">
+                        <path d="M480-371.69 267.69-584 296-612.31l184 184 184-184L692.31-584 480-371.69Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 border-t-2 border-gray-200 text-xs">
+                <a class="flex items-center" href="#">View Sitemap</a>
+            </li>
+        </ul>
+    </aside>
     <!-- main content -->
     <main>
         <!-- landing front -->
@@ -161,19 +229,23 @@
                     </div>
                     <div
                         class="relative bg-white lg:bg-transparent flex flex-col shadow-md lg:shadow-none sm:ml-4 sm:mr-4 sm:-mt-4 mb-4 z-20 lg:m-0 p-6 lg:w-5/12 lg:pt-24 lg:pl-24 lg:pr-14">
-                        <h1 class="text-xl text-black font-semibold mb-3 lg:text-3xl lg:text-white">Meet Surface Pro</h1>
-                        <p class="mb-3 text-black lg:text-white">This laptop's unrivalled flexibility and AI features like Live Captions and Cocreator, enable you to do more than you ever imagined.</p>
+                        <h1 class="text-xl text-black font-semibold mb-3 lg:text-3xl lg:text-white">Meet Surface Pro
+                        </h1>
+                        <p class="mb-3 text-black lg:text-white">This laptop's unrivalled flexibility and AI features
+                            like Live Captions and Cocreator, enable you to do more than you ever imagined.</p>
                         <div class="flex flex-col sm:flex-row gap-4 items-start">
                             <a href="#"
-                                class="whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-sm">Learn More</a>
+                                class="whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-sm">Learn
+                                More</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- landing icons -->
             <div class="flex bg-white m-6 items-center justify-center gap-4">
-                <svg id="leftToggle" class="relative fill-black cursor-pointer hover:right-1" xmlns="http://www.w3.org/2000/svg" height="24px"
-                    viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                <svg id="leftToggle" class="relative fill-black cursor-pointer hover:right-1"
+                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e8eaed">
                     <path d="M400-107.69 27.69-480 400-852.31l42.54 42.54L112.77-480l329.77 329.77L400-107.69Z" />
                 </svg>
                 <svg class="fill-black" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
@@ -196,8 +268,9 @@
                     <path
                         d="M480-480Zm0 240q-99.85 0-169.92-70.08Q240-380.15 240-480t70.08-169.92Q380.15-720 480-720t169.92 70.08Q720-579.85 720-480t-70.08 169.92Q579.85-240 480-240Zm0-40q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Z" />
                 </svg>
-                <svg id="rightToggle" class="relative fill-black cursor-pointer hover:left-1" xmlns="http://www.w3.org/2000/svg" height="24px"
-                    viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                <svg id="rightToggle" class="relative fill-black cursor-pointer hover:left-1"
+                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e8eaed">
                     <path
                         d="m320.23-107.69-42.54-42.54L607.46-480 277.69-809.77l42.54-42.54L692.54-480 320.23-107.69Z" />
                 </svg>
@@ -231,7 +304,8 @@
             </div>
         </div>
         <!-- card container 1 -->
-        <div class="card-container w-full pl-3 pr-3 lg:pl-16 lg:pr-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div
+            class="card-container w-full pl-3 pr-3 lg:pl-16 lg:pr-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <div class="card shadow-lg flex flex-col h-full cursor-pointer">
                 <div>
                     <img class="w-full h-auto" src="/assets/gldn-XSX-CP-Xbox-Series-X-DniDsl0M.jpg" alt="Xbox-Series-S-Evergreen">
