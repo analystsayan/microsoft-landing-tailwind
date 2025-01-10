@@ -91,3 +91,26 @@ rightToggle.addEventListener("click", () => {
 startAutoSlide();
 playButton.style.display = "none"; // Ensure only play button is visible initially
 
+
+
+
+
+// sidebar open close
+const openButton = document.getElementById('openSidebar');
+const closeButton = document.getElementById('closeSidebar');
+const sidebar = document.getElementById('sidebar');
+
+// Open Sidebar
+openButton.addEventListener('click', () => {
+    sidebar.style.left = '0'; // Slide in from the left
+    openButton.style.display = 'none'; // Hide Open button
+    closeButton.style.display = 'inline-block'; // Show Close button
+});
+
+// Close Sidebar
+closeButton.addEventListener('click', () => {
+    sidebar.style.left = '-1000px'; // Slide out to the left
+    closeButton.style.display = 'none'; // Hide Close button
+    openButton.style.display = 'inline-block'; // Show Open button
+});
+
