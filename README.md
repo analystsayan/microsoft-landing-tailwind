@@ -11,7 +11,7 @@ This project is a responsive Microsoft-themed webpage featuring cards, a footer 
 
 ## Screenshots
 
-![Screenshot of the webpage](screenshot.png)
+![Screenshot of the webpage](/media/screenshot.png)
 
 ## Prerequisites
 
