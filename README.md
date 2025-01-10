@@ -54,15 +54,16 @@ Alternatively, use Node.js with http-server:
     
 ## File Structure
 
-    ```bash
+```bash
     microsoft-themed-webpage/
-    ├── index.html        # Main HTML file
-    ├── css/              # CSS styles
-    │   └── style.css
-    ├── js/               # JavaScript files
-    │   └── main.js
-    ├── media/            # Images and other media files
-    │   ├── Content-Card-Microsoft-Teams-Commercial-Meeting.avif
-    │   └── Content-Card-Windows-11-Business.avif
-    └── README.md         # Project documentation
+    ├── icons
+    ├── media
+    ├── index.html
+    ├── main.js
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.js
+    ├── tailwind.config.js
+    ├── vite.config.js
+    └── README.md
 
